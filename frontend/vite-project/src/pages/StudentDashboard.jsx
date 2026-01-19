@@ -56,12 +56,7 @@ const StudentDashboard = () => {
         <button className="logout-btn" onClick={handleLogout}>
           Logout
         </button>
-            <p
-  style={{ color: "#667eea", cursor: "pointer", fontWeight: "600" }}
-  onClick={() => navigate("/student/help")}
->
-  Need Help?
-</p>
+           
       </div>
 
       <div className="card">
@@ -129,6 +124,13 @@ const StudentDashboard = () => {
         )}
         
       </div>
+        <p
+          className="help"
+          style={{ cursor: "pointer", fontWeight: "600" }}
+          onClick={() => navigate("/student/help")}
+        >
+          Need Help?
+        </p>
       
 
     </div>

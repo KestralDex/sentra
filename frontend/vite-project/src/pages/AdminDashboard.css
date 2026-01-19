@@ -1,164 +1,227 @@
+
 .admin-dashboard {
   min-height: 100vh;
-  background: transparent;
-  padding: 30px;
-  animation: fadeIn 0.6s ease;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.8s ease;
 }
 
 .dashboard-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 2px solid #e1e5e9;
 }
 
 .dashboard-header h2 {
-  font-size: 26px;
-  color: #333;
+  font-size: 32px;
+  color: #2c3e50;
+  font-weight: 700;
+  margin: 0;
 }
 
 .logout-btn {
-  background: #ff4d4f;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
   color: white;
   border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
 }
 
 .logout-btn:hover {
-  background: #e63b3d;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
 }
 
 .filter-bar {
-  max-width: 300px;
-  margin-bottom: 25px;
+  max-width: 350px;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .filter-bar label {
   display: block;
-  margin-bottom: 6px;
-  color: #555;
+  margin-bottom: 10px;
+  color: #34495e;
   font-weight: 600;
+  font-size: 16px;
 }
 
 .filter-bar select {
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #ecf0f1;
+  background: #f8f9fa;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.filter-bar select:focus {
+  outline: none;
+  border-color: #3498db;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .incident-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 25px;
 }
 
 .incident-card {
   background: white;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  animation: slideUp 0.4s ease;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.6s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #ecf0f1;
+}
+
+.incident-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .incident-card h4 {
-  margin-bottom: 6px;
-  color: #333;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .incident-card p {
-  font-size: 14px;
-  color: #555;
+  font-size: 15px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .meta {
   display: flex;
   justify-content: space-between;
-  margin: 12px 0;
+  align-items: center;
+  margin: 15px 0;
 }
 
 .category {
-  background: #eef1ff;
-  color: #4b5cff;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 13px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .status {
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  font-size: 14px;
   color: white;
+  font-weight: 500;
 }
 
 .status.Pending {
-  background: #ff9800;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
 }
 
 .status.In-Review {
-  background: #2196f3;
+  background: linear-gradient(135deg, #3498db, #2980b9);
 }
 
 .status.Resolved {
-  background: #4caf50;
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.reported {
+  font-size: 14px;
+  color: #95a5a6;
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 .incident-card textarea {
   width: 100%;
-  height: 70px;
+  height: 80px;
   resize: none;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #ecf0f1;
+  margin-top: 15px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.incident-card textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .action-buttons {
   display: flex;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.review-btn, .resolve-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .review-btn {
-  flex: 1;
-  background: #2196f3;
+  background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
 .resolve-btn {
-  flex: 1;
-  background: #4caf50;
+  background: linear-gradient(135deg, #27ae60, #229954);
   color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
 }
 
-.review-btn:hover,
-.resolve-btn:hover {
-  opacity: 0.9;
+.review-btn:hover, .resolve-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .empty {
   text-align: center;
-  color: #777;
+  color: #95a5a6;
   grid-column: 1 / -1;
+  font-size: 18px;
+  font-style: italic;
 }
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -172,5 +235,36 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .dashboard-header h2 {
+    font-size: 28px;
+  }
+
+  .incident-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .action-buttons {
+    flex-direction: column;
   }
 }

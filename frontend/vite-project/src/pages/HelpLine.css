@@ -1,4 +1,4 @@
-/* 🌸 Soft pastel background (not bright) */
+
 .helpline-page {
   width: 100vw;
   min-height: 100vh;
@@ -10,7 +10,7 @@
   animation: fadeIn 0.6s ease-in-out;
 }
 
-/* 🌼 Card */
+
 .helpline-card {
   background: #ffffff;
   max-width: 620px;
@@ -21,21 +21,18 @@
   animation: slideUp 0.6s ease;
 }
 
-/* Title */
 .helpline-card h2 {
   text-align: center;
   margin-bottom: 25px;
   color: #4a4a7a;
 }
 
-/* Section titles */
 .helpline-card h3 {
   margin-top: 22px;
   margin-bottom: 10px;
   color: #6b6bbd;
 }
 
-/* Lists */
 .helpline-card ul {
   padding-left: 20px;
 }
@@ -46,7 +43,6 @@
   color: #555;
 }
 
-/* Note text */
 .note {
   margin-top: 22px;
   text-align: center;
@@ -54,7 +50,6 @@
   font-size: 14px;
 }
 
-/* 🔙 Back Button */
 .back-btn {
   width: 100%;
   margin-top: 25px;
@@ -75,7 +70,6 @@
   box-shadow: 0 8px 18px rgba(120, 120, 200, 0.25);
 }
 
-/* Animations */
 @keyframes slideUp {
   from {
     opacity: 0;

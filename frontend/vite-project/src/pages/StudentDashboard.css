@@ -12,6 +12,12 @@
   margin-bottom: 30px;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .dashboard-header h2 {
   color: #333;
 }
@@ -20,6 +26,7 @@
   background: #ff4d4f;
   color: white;
   border: none;
+  margin-left:40px;  
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -28,6 +35,14 @@
 
 .logout-btn:hover {
   background: #e63b3d;
+}
+
+.help {
+  color: white;
+  border: none;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;  
 }
 
 .card {
