@@ -12,7 +12,6 @@ const StudentDashboard = () => {
 
   const navigate = useNavigate();
 
-  // Fetch incidents
   const fetchIncidents = async () => {
     try {
       const res = await API.get("/incidents/my");
@@ -26,7 +25,6 @@ const StudentDashboard = () => {
     fetchIncidents();
   }, []);
 
-  // Create incident
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -44,7 +42,6 @@ const StudentDashboard = () => {
     }
   };
 
-  // Logout
   const handleLogout = () => {
     localStorage.clear();
     navigate("/");
@@ -54,7 +51,6 @@ const StudentDashboard = () => {
 
   return (
     <div className="student-dashboard">
-      {/* HEADER */}
       <div className="dashboard-header">
         <h2>Student Dashboard</h2>
         <button className="logout-btn" onClick={handleLogout}>
@@ -68,7 +64,6 @@ const StudentDashboard = () => {
 </p>
       </div>
 
-      {/* REPORT INCIDENT */}
       <div className="card">
         <h3>Report New Incident</h3>
 
@@ -106,7 +101,6 @@ const StudentDashboard = () => {
         </form>
       </div>
 
-      {/* MY INCIDENTS */}
       <div className="card">
         <h3>My Incidents</h3>
 
