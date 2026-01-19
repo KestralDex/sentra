@@ -1,6 +1,6 @@
 .student-dashboard {
   min-height: 100vh;
-  background: #f4f6fb;
+  background: transparent;
   padding: 30px;
   animation: fadeIn 0.6s ease;
 }

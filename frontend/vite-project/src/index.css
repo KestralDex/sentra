@@ -9,6 +9,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url('./assets/Background Image.jpg') no-repeat center center fixed;
+  background-size: cover;
   background-color: #f4f6fb;
 }
 
