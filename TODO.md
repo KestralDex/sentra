@@ -1,4 +1,5 @@
-# TODO List for Adding Background Image to Webapp
+# TODO: Update Backend Routing in Frontend
 
-- [x] Edit `frontend/vite-project/src/index.css` to add the background image to the body element with appropriate CSS properties (background-size: cover; background-repeat: no-repeat; background-color as fallback).
-- [x] Run the development server to verify the background image appears correctly across the webapp.
+- [x] Update baseURL in frontend/vite-project/src/api.js to https://sentra-qol8.onrender.com/api
+- [x] Update API call in frontend/vite-project/src/pages/Register.jsx to use https://sentra-qol8.onrender.com/api/auth/register
+- [x] Update API call in frontend/vite-project/src/pages/Login.jsx to use https://sentra-qol8.onrender.com/api/auth/login
